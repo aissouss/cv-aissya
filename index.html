@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Aissya Boukraa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    .cv {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .sidebar {
+      background: #fce4ec;
+      padding: 2rem 1.5rem;
+      color: #333;
+      position: relative;
+    }
+    .main {
+      padding: 2rem;
+    }
+    .sidebar h1 {
+      font-size: 1.8rem;
+      color: #d81b60;
+      margin-bottom: 0.5rem;
+      animation: fadeIn 1.2s ease-in;
+    }
+    .sidebar p.title {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .section-title {
+      color: #d81b60;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      border-bottom: 1px solid #f8bbd0;
+      padding-bottom: .3rem;
+      font-size: 1.1rem;
+    }
+    .skills {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .skill-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .dots {
+      display: flex;
+      gap: 4px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+    }
+    .dot.filled {
+      background-color: #d81b60;
+    }
+    .interests span {
+      display: inline-block;
+      background: #f8bbd0;
+      margin: 0.3rem 0.3rem 0 0;
+      padding: 0.3rem 0.7rem;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      color: #333;
+      transition: transform 0.3s;
+    }
+    .interests span:hover {
+      transform: scale(1.1);
+    }
+    .main h2 {
+      color: #d81b60;
+      margin-bottom: 0.5rem;
+    }
+    .main p, .main li {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+    .main ul {
+      padding-left: 1rem;
+    }
+    .btn-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .btn {
+      background-color: #d81b60;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .btn:hover {
+      background-color: #b81350;
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+    .cv {
+      grid-template-columns: 1fr;
+    }
+    .sidebar, .main {
+      padding: 1rem;
+    }
+    .btn-container {
+      text-align: center;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <div class="sidebar">
+      <h1>Aissya Boukraa</h1>
+      <p class="title">Étudiante en Génie Logiciel</p>
+
+      <div class="section">
+        <p class="section-title">Contact</p>
+        <p><i class="fas fa-envelope"></i> aissya.boukraa@email.com</p>
+        <p><i class="fas fa-phone"></i> +216 52 778 460</p>
+        <p><i class="fas fa-location-dot"></i> Tunis, Tunisie</p>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Compétences</p>
+        <div class="skills">
+          <div class="skill-item"><span>HTML</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>CSS</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>JavaScript</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>PHP</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>SQL</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>Python</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>Java</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>SAP</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span>Méthode Agile</span><div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Langues</p>
+        <p>Français : Langue maternelle</p>
+        <p>Anglais : Intermédiaire (B2)</p>
+        <p>Arabe : Intermédiaire (B2)</p>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Centres d’intérêt</p>
+        <div class="interests">
+          <span>🎮 Jeux vidéo</span><span>⚽ Sport</span><span>📚 Lecture</span>
+          <span>🍱 Cuisine</span><span>📖 Manga</span>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn" onclick="window.print()"><i class="fas fa-download"></i> Télécharger en PDF</button>
+        <button class="btn" onclick="contactMe()" style="margin-top:10px;"><i class="fas fa-paper-plane"></i> Me contacter</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <section>
+        <h2>À propos</h2>
+        <p>Étudiante en L2 à l’Université Internationale de Tunis, passionnée par le développement et les bases de données. Je cherche un stage été 2025 dans le domaine du développement web ou back-end.</p>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+        <p><strong>Baccalauréat</strong> – obtenu en 2022<br />Centre National d’Enseignement à Distance (CNED)</p>
+        <p><strong>Université Internationale de Tunis</strong><br />Licence – Génie logiciel & Développement des systèmes d'information (2023 - aujourd'hui)</p>
+      </section>
+
+      <section>
+        <h2>Projets Universitaires</h2>
+        <ul>
+          <li>Site web Nutrition (HTML/CSS) — design et structure responsive</li>
+          <li>Projet agile — application développée en équipe avec méthode SCRUM</li>
+          <li>Atelier SAP — simulation d’un flux métier complet (commande / stock / livraison)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Motivation</h2>
+        <p>Je suis une personne investie, organisée et passionnée par tout ce qui touche au développement informatique. Mon objectif est de mettre en pratique mes connaissances techniques dans un cadre professionnel enrichissant, où je pourrai apprendre aux côtés de professionnels expérimentés. Travailler dans votre entreprise m'attire particulièrement car cela me permettrait de contribuer à des projets concrets, visibles et impactants. Je suis prête à m'impliquer pleinement dans les missions qui me seront confiées et à apprendre au quotidien.</p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    function contactMe() {
+      const email = "aissya.boukraa@email.com";
+      const subject = encodeURIComponent("Demande de contact via votre CV");
+      const body = encodeURIComponent("Bonjour Aissya,\n\nJe vous contacte concernant...");
+      window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
